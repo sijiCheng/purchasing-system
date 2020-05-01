@@ -1,5 +1,11 @@
 {
   "system": {
-    "cancelButtonText": "Cancel"
+    "welcomeText": "Welcome to intelligent purchasing system！",
+    "featuredSlogan": "Search fast, buy fast",
+    "searchButtonText":"Start using",
+    "treasuredObject": "Empty collection",
+    "languageButtonText": "En/中",
+    "settingButtonText": "System settings",
+    "developmentInfoText": "© siji-2020"
   }
 }

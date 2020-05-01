@@ -1,6 +1,11 @@
 {
   "system": {
-    "cancelButtonText": "取消",
-    "searchInputPlaceholderText": "请输入商品关键字"
+    "welcomeText": "欢迎使用智能采买系统！",
+    "featuredSlogan": "搜的快，才能买得快",
+    "searchButtonText":"开始使用",
+    "treasuredObject": "清空收藏",
+    "languageButtonText": "中/En",
+    "settingButtonText": "系统设置",
+    "developmentInfoText": "© 思集-2020"
   }
 }

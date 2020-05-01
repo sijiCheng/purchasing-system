@@ -1,24 +1,24 @@
 <template>
-  <div id="app">
-    <mt-search
-                v-model="value"
-               :placeholder="$t('system.searchInputPlaceholderText')"
-               :cancel-text="$t('system.cancelButtonText')"></mt-search>
-  </div>
+    <div id="app">
+        <main-page></main-page>
+    </div>
 </template>
 
 <script>
+    import mainPage from './mainpage'
 
-export default {
-  name: 'App',
-  data:function () {
-    return{
-      value:'11111111'
+    export default {
+
+        name: 'App',
+        data: function () {
+            return {
+                value: '11111111'
+            }
+        },
+        components: {
+            mainPage
+        }
     }
-  },
-  components: {
-  }
-}
 </script>
 
 <style>
