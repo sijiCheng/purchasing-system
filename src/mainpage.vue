@@ -5,7 +5,7 @@
             <div class="systemIcon"><img src="./assets/imgs/persys.png" alt=""></div>
             <div class="productSlogan"><p>{{$t('system.featuredSlogan')}}</p></div>
             <div class="searchButton">
-                <mt-button size="small" @click.native="handleClick" type="primary">
+                <mt-button size="small" @click.native="changeComponentShow" type="primary">
                     {{$t('system.searchButtonText')}}
                 </mt-button>
             </div>
@@ -19,7 +19,7 @@
                     <img src="./assets/imgs/clearCar.png" slot="icon" alt="">
                     {{$t('system.treasuredObject')}}
                 </mt-button>
-                <mt-button size="small" @click.native="changeLanguage" >
+                <mt-button size="small" @click.native="changeLanguage">
                     <img src="./assets/imgs/lang.png" slot="icon" alt="">
                     {{$t('system.languageButtonText')}}
                 </mt-button>
@@ -50,9 +50,12 @@
             handleClick: function () {
                 console.log('55555555')
             },
-            changeLanguage:function () {
+            changeLanguage: function () {
                 let locale = this.$i18n.locale
                 locale === 'zh_cn' ? this.$i18n.locale = 'en_us' : this.$i18n.locale = 'zh_cn'
+            },
+            changeComponentShow: function () {
+                this.$parent.changeComponentByName('componentPage');
             }
         }
     }
